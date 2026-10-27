@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+*.bat text eol=crlf
+*.vbs text eol=crlf
+LEEME-INSTALACION.txt text eol=crlf
+*.ico binary
+*.png binary
+*.phar binary
+
+/.github export-ignore
+CHANGELOG.md export-ignore

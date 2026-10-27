@@ -1,0 +1,62 @@
+==================================================================
+ INVENTARIO OFICINA - INSTALACION
+ Control de elementos para alcaldias y oficinas
+==================================================================
+
+Solo se hace UNA vez por computador. Se necesita Windows 10 u 11.
+
+1) INSTALAR XAMPP
+   - Descargar XAMPP para Windows de https://www.apachefriends.org
+     (version con PHP 8.2 o superior).
+   - Instalarlo en la carpeta C:\xampp (es la que propone por defecto).
+   - No hace falta abrirlo ni configurarlo.
+   - Si en este computador ya esta instalado Inventario General,
+     no instale XAMPP otra vez: los dos sistemas lo comparten.
+
+2) COPIAR EL PROGRAMA
+   - Descomprimir InventarioOficina-instalador.zip en C:\
+   - Debe quedar la carpeta C:\InventarioOficina
+
+3) INSTALAR
+   - Doble clic en C:\InventarioOficina\instalar.bat
+   - Windows pide permiso de administrador: responder SI.
+   - Si aparece "Windows protegio su PC": Mas informacion -> Ejecutar de todas formas.
+   - Responder las preguntas:
+       * Datos de ejemplo: N (S solo para practicar)
+       * Nombre de la alcaldia u oficina, NIT, municipio, direccion
+       * Nombre y cargo de quien entrega los elementos (firma las actas)
+       * Correo y contrasena del administrador
+
+Al terminar queda en el escritorio el icono "Inventario Oficina".
+
+------------------------------------------------------------------
+ PRIMEROS PASOS DENTRO DEL SISTEMA
+------------------------------------------------------------------
+ 1. Administrar > Entidad: revise los datos y suba el logo o escudo.
+ 2. Personas > Dependencias: Secretaria de Gobierno, Tesoreria, etc.
+ 3. Personas > Responsables: los funcionarios que reciben elementos.
+ 4. Almacen > Categorias y luego Almacen > Elementos.
+    Al crear un elemento puede escribir la cantidad que ya hay.
+ 5. Movimientos > Nueva salida / prestamo: entregar elementos e
+    imprimir el acta de entrega para firmar.
+ 6. Administrar > Usuarios: cree los usuarios de quienes van a usar
+    el sistema con el rol Almacenista o Consulta.
+
+------------------------------------------------------------------
+ USO DIARIO
+------------------------------------------------------------------
+ - Doble clic en el icono "Inventario Oficina" del escritorio.
+   Tarda unos segundos la primera vez del dia y se abre solo.
+ - No hace falta abrir XAMPP ni tener internet.
+ - Cada dia se guarda sola una copia de seguridad en
+   C:\InventarioOficina\respaldos (se conservan los ultimos 30 dias).
+   Recomendado: copiar esa carpeta a una USB o a la nube cada semana.
+ - Para volver a una copia anterior: restaurar-respaldo.bat
+
+------------------------------------------------------------------
+ SI ALGO FALLA
+------------------------------------------------------------------
+ - El icono muestra un mensaje explicando el problema.
+ - Reiniciar el computador soluciona la mayoria de los casos.
+ - Para apagar todo manualmente: C:\InventarioOficina\windows\detener.bat
+ - Registro de errores: C:\InventarioOficina\storage\logs\laravel.log

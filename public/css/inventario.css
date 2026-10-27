@@ -1,0 +1,70 @@
+/* Ajustes propios sobre Black Dashboard */
+select.form-control,
+select.form-control option { background-color: #27293d; color: #fff; }
+.white-content select.form-control,
+.white-content select.form-control option { background-color: #fff; color: #222a42; }
+
+.page-header h2 { font-weight: 600; }
+.search-form .form-control { min-width: 260px; }
+.table td, .table th { vertical-align: middle; }
+.table .text-right { white-space: nowrap; }
+.btn-icon.btn-sm { padding: 0 .4rem; }
+
+.kpi { min-height: 120px; }
+.kpi .kpi-value { font-size: 1.6rem; font-weight: 600; margin: 0; }
+.kpi .kpi-label { text-transform: uppercase; font-size: .75rem; letter-spacing: .04em; opacity: .7; }
+
+/* Pantalla de venta / compra */
+.scan-box { font-size: 1.25rem; height: auto; padding: .7rem 1rem; }
+.scan-results { position: absolute; z-index: 20; left: 15px; right: 15px; max-height: 300px; overflow-y: auto; }
+.scan-results .list-group-item { cursor: pointer; background: #27293d; color: #fff !important; border-color: #344675; }
+.scan-results .list-group-item small { color: rgba(255,255,255,.75); }
+.scan-results .list-group-item.active, .scan-results .list-group-item:hover { background: #e14eca; }
+.white-content .scan-results .list-group-item { background: #fff; color: #222a42 !important; }
+.white-content .scan-results .list-group-item.active { color: #fff !important; }
+.white-content .scan-results .list-group-item small { color: inherit; }
+.line-items input.form-control { min-width: 80px; }
+.totals-box .total-final { font-size: 2rem; font-weight: 700; }
+.product-thumb { width: 160px; height: 160px; object-fit: cover; border-radius: 6px; }
+.logo-preview { max-height: 90px; }
+
+/* ---- Inventario Oficina ---- */
+.navbar-search { position: relative; margin-right: 1rem; }
+.navbar-search i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: .6; }
+.navbar-search .form-control { padding-left: 34px; min-width: 260px; }
+.user-initials { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%;
+    background: linear-gradient(135deg, #e14eca, #ba54f5); color: #fff; font-weight: 600; font-size: .8rem; letter-spacing: .03em; }
+.badge-type-CONSUMABLE { background: #1d8cf8; color: #fff; }
+.badge-type-RETURNABLE { background: #ff8d72; color: #fff; }
+.badge-cond-GOOD { background: #00f2c3; color: #1e1e2f; }
+.badge-cond-DAMAGED { background: #fd5d93; color: #fff; }
+.badge-cond-INCOMPLETE { background: #ff8d72; color: #fff; }
+.item-thumb { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; }
+.item-thumb-empty { width: 40px; height: 40px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,.06); color: rgba(255,255,255,.35); }
+.item-photo { width: 100%; max-width: 260px; height: 220px; object-fit: cover; border-radius: 6px; }
+tr.row-overdue td { background: rgba(253, 93, 147, .08); }
+.text-overdue { color: #fd5d93 !important; font-weight: 600; }
+.alert-overdue { border-left: 4px solid #fd5d93; }
+.alert-overdue a.alert-link { text-decoration: underline; }
+.stat-line { display: flex; justify-content: space-between; padding: .45rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+.stat-line:last-child { border-bottom: none; }
+.stat-line b { font-size: 1.15rem; }
+.filters .form-group { margin-bottom: .75rem; }
+.filters label { font-size: .75rem; }
+.line-items .type-pill { font-size: .7rem; }
+.kpi a { color: inherit; }
+.kpi.kpi-danger { border-left: 4px solid #fd5d93; }
+.kpi.kpi-warning { border-left: 4px solid #ff8d72; }
+.report-summary th, .report-summary td { white-space: nowrap; }
+.card .table thead th { font-size: .72rem; }
+.selected-person { border: 1px dashed rgba(255,255,255,.2); border-radius: 6px; padding: .6rem .8rem; }
+.modal-content .form-control { color: #222a42; }
+.modal-content select.form-control, .modal-content select.form-control option { background-color: #fff; color: #222a42; }
+.modal-content label { color: #525f7f; }
+.login-brand { text-align: center; margin: 2rem 0 1.5rem; }
+.login-brand img { max-height: 90px; margin-bottom: 1rem; }
+.login-brand h3 { margin: 0; font-weight: 600; }
+.card-login .form-control { color: #222a42; }
+.return-line select.form-control { min-width: 120px; }
+@media print { .sidebar, .navbar, .footer, .btn, form.filters { display: none !important; } .main-panel { width: 100% !important; } }
